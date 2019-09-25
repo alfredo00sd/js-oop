@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product app</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- Bootswatch theme -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="app.js" async></script> 
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <a href="/" class="navbar-brand">
+            Product app
+        </a>
+    </nav>
+
+    <div class="container">
+        <!-- application -->
+        <div id="app" class="row pt-5">
+        
+            <!-- Form to add products -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add product</h4>
+                    </div>
+                    <form id="product-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Product name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" step="0.01" id="price" placeholder="Product price" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="year" min="1990" value="2019" placeholder="Product date" class="form-control">
+                        </div>
+                        <input type="submit" value="save" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+            </div>
+        
+            <!-- Container to holds the products added -->
+            <div id="products-list" class="col-md-8"></div>
+        </div>
+
+    </div>
+</body>
+</html>
+
